@@ -33,7 +33,8 @@
   "dependencies": {
     "gulp-util": "^3.0.0",
     "through2": "^2.0.0",
-    "vulcanize": "^1.9.1"
+    "vulcanize": "^1.9.1",
+		"polymer-bundler": "^2.1.0"
   },
   "devDependencies": {
     "del": "^2.2.2",
