@@ -2,7 +2,7 @@
 const gutil = require('gulp-util');
 const through = require('through2');
 const Vulcanize = require('vulcanize');
-const PolymerBundler = require('polymer-bundler');
+const PolymerBundler = require('polymer-bundler').Bundler();
 
 module.exports = opts => {
 	opts = opts || {};
