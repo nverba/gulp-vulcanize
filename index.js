@@ -2,6 +2,7 @@
 const gutil = require('gulp-util');
 const through = require('through2');
 const Vulcanize = require('vulcanize');
+const PolymerBundler = require('polymer-bundler');
 
 module.exports = opts => {
 	opts = opts || {};
@@ -17,7 +18,7 @@ module.exports = opts => {
 			return;
 		}
 
-		(new Vulcanize(opts)).process(file.path, (err, inlinedHtml) => {
+		(new PolymerBundler(opts)).process(file.path, (err, inlinedHtml) => {
 			if (err) {
 				cb(new gutil.PluginError('gulp-vulcanize', err, {fileName: file.path}));
 				return;
